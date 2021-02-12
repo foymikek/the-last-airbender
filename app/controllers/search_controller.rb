@@ -8,6 +8,5 @@ class SearchController < ApplicationController
     @characters = results.map do |result|
       Character.new(result)
     end
-    # require 'pry'; binding.pry
   end
 end
