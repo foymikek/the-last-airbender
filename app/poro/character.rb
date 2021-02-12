@@ -6,7 +6,6 @@ class Character
               :affiliation
   
   def initialize(data)
-    # require 'pry'; binding.pry
     @name = data[:name]
     @photo = data[:photoUrl]
     @allies = data[:allies]

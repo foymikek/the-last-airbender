@@ -5,13 +5,17 @@ Population: <%= @characters.count %>
       <%= character.name %>
     </p>
     <p class='photo'>
-      <%= character.photo %>
+      <%= image_tag("#{character.photo}") %>
     </p>
     <p class='allies'>
-      <%= character.allies %>
+      <% character.allies.each do |ally| %>
+          <%= ally %>
+      <% end %>    
     </p>
     <p class='enemies'>
-      <%= character.enemies %>
+      <% character.enemies.each do |enemy| %>
+        <%= enemy %>
+      <% end %>
     </p>
     <p class='affiliation'>
       <%= character.affiliation %>

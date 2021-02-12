@@ -3,7 +3,7 @@ require 'rails_helper'
 describe SearchFacade do
   it 'exists' do
     search_facade = SearchFacade.new
-
+    
     expect(search_facade).to be_an_instance_of(SearchFacade)
   end
 
