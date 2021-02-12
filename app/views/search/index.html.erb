@@ -1,0 +1,17 @@
+Population: <%= @members.count %>
+<% @members.each do |member| %>
+  <ul class='community'>
+    <p class='name'>
+      <%= member.name %>
+    </p>
+    <p class='allies'>
+      <%= member.allies %>
+    </p>
+    <p class='enemies'>
+      <%= member.enemies %>
+    </p>
+    <p class='affiliations'>
+      <%= member.affiliations %>
+    </p>
+  </ul>
+<% end %>
