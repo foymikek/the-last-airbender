@@ -1,17 +1,20 @@
-Population: <%= @members.count %>
-<% @members.each do |member| %>
+Population: <%= @characters.count %>
+<% @characters.each do |character| %>
   <ul class='community'>
     <p class='name'>
-      <%= member.name %>
+      <%= character.name %>
+    </p>
+    <p class='photo'>
+      <%= character.photo %>
     </p>
     <p class='allies'>
-      <%= member.allies %>
+      <%= character.allies %>
     </p>
     <p class='enemies'>
-      <%= member.enemies %>
+      <%= character.enemies %>
     </p>
-    <p class='affiliations'>
-      <%= member.affiliations %>
+    <p class='affiliation'>
+      <%= character.affiliation %>
     </p>
   </ul>
 <% end %>
